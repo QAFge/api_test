@@ -1,0 +1,67 @@
+[32mINFO    [0m root:http_client.py:51 接口请求地址: https://h5.qhkyfund.com/fi-mall-fundcustomer-server-v3/userLogin/login
+[32mINFO    [0m root:http_client.py:52 接口请求方式: POST
+[32mINFO    [0m root:http_client.py:53 接口请求头: {
+    "Accept": "application/json,text/plain,*/*",
+    "Accept-Encoding": "gzip,deflate,br",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Cache-Control": "no-cache",
+    "Connection": "keep-alive",
+    "Content-Length": "53",
+    "Content-Type": "application/json",
+    "Host": "h5.qhkyfund.com",
+    "Origin": "https://h5.qhkyfund.com",
+    "Pragma": "no-cache",
+    "Referer": "https://h5.qhkyfund.com/lcsm/mall/index",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "timestamp": "1660455380794",
+    "tk-token-authorization": "",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"
+}
+[32mINFO    [0m root:http_client.py:54 接口请求 params 参数: null
+[32mINFO    [0m root:http_client.py:55 接口请求体 data 参数 : ""
+[32mINFO    [0m root:http_client.py:56 接口请求体 json 参数: {
+    "login_type": 2,
+    "login_value": "13480620409",
+    "password": "TeMnp90Z73qCDinCsH0gTWIWCzGcuyOioPRUTc2CZg31l1Pp/L6CKQrDMaFtWAzPz/H2AkIz8nxyo/uITToXeA==",
+    "id_type": 0,
+    "ip": " ",
+    "user_type": 1,
+    "device_mac": " ",
+    "device_name": " ",
+    "funcNo": 3057712
+}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1003 Starting new HTTPS connection (1): h5.qhkyfund.com:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:456 https://h5.qhkyfund.com:443 "POST /fi-mall-fundcustomer-server-v3/userLogin/login HTTP/1.1" 200 None
+[32mINFO    [0m root:http_client.py:60 返回信息 : {"code":0,"msg":"成功","data":{"login_response":{"id_type":"0","user_id":"0000161815","credential_id":"E62F19A6F9737377E053150A000AC547","gender":"1","login_type":null,"login_value":null,"password":null,"ip":null,"user_type":null,"device_mac":null,"device_name":null,"declare_credential_type":null,"client_name":"黄廷","nick_name":"大聪明","profile":"data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAIQAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAHRyWFlaAAABZAAAABRnWFlaAAABeAAAABRiWFlaAAABjAAAABRyVFJDAAABoAAAAChnVFJDAAABoAAAAChiVFJDAAABoAAAACh3dHB0AAAByAAAABRjcHJ0AAAB3AAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAFgAAAAcAHMAUgBHAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAABvogAAOPUAAAOQWFlaIAAAAAAAAGKZAAC3hQAAGNpYWVogAAAAAAAAJKAAAA+EAAC2z3BhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABYWVogAAAAAAAA9tYAAQAAAADTLW1sdWMAAAAAAAAAAQAAAAxlblVTAAAAIAAAABwARwBvAG8AZwBsAGUAIABJAG4AYwAuACAAMgAwADEANv/bAEMAUDc8RjwyUEZBRlpVUF94yIJ4bm549a+5kcj////////////////////////////////////////////////////bAEMBVVpaeGl464KC6//////////////////////////////////////////////////////////////////////////AABEIAJUAgAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAQMCBAX/xAAoEAACAgEEAAYDAAMAAAAAAAAAAQIRAxIhMUEEEyIyUWFxgZEzQqH/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAGBEBAQEBAQAAAAAAAAAAAAAAAAERITH/2gAMAwEAAhEDEQA/AEAwMupDAnlyadlyC3G5SUVuyfnLqJKm3vuzSha+Csa2srfSGpt9IxocRxv4IbW9Q00+Ccumg1JrfnoLqoE1k0upO18lQ1LpAMQAAAAwC18ha+QaU5aIX/Dl5dspnlqkoroePDdWVi9GODfCLwwu9ykIpcG1sQZ8ldi8mJuwsCfkRQPBBrgoAHHmwOCtO0ZxZP8AWX6O1q1TOLNi0T24B4sBjFPVGu0bDegADYg5wGI6OLeONtyLInH2IpB2YdG0zVgkaoBIYuACHYhiAGTzRuJtsJq4kVwNOMh2/kpmjRM3GaLfyFv5AKKmmJjE+AKxXpNpqK3Zi6hf0YS1v1ypGG1vPj0Uhk1ENGCqUqf5MW8c6u0EdknsSlkl0WgrgmRyJLfoKys8lKqKwyqXZBZoxe/H0jeuE90k19c/wIs+dholFJccFCKjlRz9l8j5OezUZpjEhmmQFNukA4Xq2CxuMW4KNb0YeOTe+yLQlvZZPV0Ybc0cEXymLJCPmRUV+TraIJasgR0L2mJRtU0mbrYSAl5Sb3imNYI2npr8MqMDKikJmrMSCsRxqerVxY8vh4uFwVNcGoXpdfJverkIleehi7YzTIHD3fkQcMordMtB7HO3cmymN9HNtTLPRBvvolikovd7hleuaXSISg3PYo79ca5E+LRzRxNVqk9+kVxxhGV00/thFE96Zq9hbPsTALMvkZmWxFbxbJ2LPLTik/on50cUd0229kRy5ZZX8JdGozU0aEhlQxDEVBHmi2GtZE1CVMxW43k1Qft2MxnkfEC7qUSWmUW9wrV5W70r+jvL3Ff0StP3MrFWtwJrzHtpiv2UXst8muEYk9gHZifH5C6XJlty2/RBLOqUDCL+JXoj9MgjcYpgAFDEAAArpjE1ZKSrYpFk4s44ycXudPh3Fqcpq6rj7M41qqiuRuSQenXJU/TXewslaXKn/VQw1jJO+DCdurE5qibn8EVuUimGL9z/AETxQc3b4OnhUBHxP+P9nKjtyR1wa+TjcXB6ZcmozQMQzSNTST2NKCow7cth+oDXloHBJGfWDcuwM6U0UwKseW3SuO9X2JL0oUlZlVvOi80tMpXJpLSlvt9/YvFTUVpU5SldtNLb/hHE1HIm4aq43oq8by5XOaq+hpiEYym9i+PBT33LxjGKpILIoSoYAFIWTHCcPXtXfwbSOfPk1y0p+lc/YiVLQq9xlprlM2ubZqzTLOM2AFBZie7AAgm60r5EwAzW4IP1nRYAZVqxoAKGNAAE/EScMe3L2s5qp6egAsZDdDvYAKP/2Q==","cust_no":"000012276119","client_id":"735708","cust_type":"1","device_info":{"id":"1473634958195011586","user_id":"0000161815","device_name":" ","device_mac":" ","login_times":"1254","last_login_ip":" ","last_time":"2022-08-14 17:55:26","create_time":null,"update_time":"2022-08-14 17:55:26"},"last_device_info":{"id":"1473634958195011586","user_id":"0000161815","device_name":" ","device_mac":" ","login_times":"1253","last_login_ip":" ","last_time":"2022-08-14 17:39:37","create_time":null,"update_time":null},"same_as_last_device":"1","flag_defaultpage":null,"fund_acco_list":[],"id_no":"360312199610191532","is_new_device":"0","last_login":null,"last_login_ip":null,"mobile":"13480620409","rule_code":null,"is_regcustset_pwd":"1","is_normal_account":"0","is_kyc":"1","is_special_user":null}}}
+[32mINFO    [0m root:http_client.py:51 接口请求地址: https://h5.qhkyfund.com/fi-mall-fundcustomer-server-v3/advisor/get
+[32mINFO    [0m root:http_client.py:52 接口请求方式: POST
+[32mINFO    [0m root:http_client.py:53 接口请求头: {
+    "Accept": "application/json,text/plain,*/*",
+    "Accept-Encoding": "gzip,deflate,br",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+    "Cache-Control": "no-cache",
+    "Connection": "keep-alive",
+    "Content-Length": "53",
+    "Content-Type": "application/json",
+    "Host": "h5.qhkyfund.com",
+    "Origin": "https://h5.qhkyfund.com",
+    "Pragma": "no-cache",
+    "Referer": "https://h5.qhkyfund.com/lcsm/mall/index",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+    "timestamp": "1660455380794",
+    "tk-token-authorization": "",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1"
+}
+[32mINFO    [0m root:http_client.py:54 接口请求 params 参数: null
+[32mINFO    [0m root:http_client.py:55 接口请求体 data 参数 : ""
+[32mINFO    [0m root:http_client.py:56 接口请求体 json 参数: {
+    "user_id": "0000161815",
+    "funcNo": 6857902
+}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:1003 Starting new HTTPS connection (1): h5.qhkyfund.com:443
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:456 https://h5.qhkyfund.com:443 "POST /fi-mall-fundcustomer-server-v3/advisor/get HTTP/1.1" 200 None
+[32mINFO    [0m root:http_client.py:60 返回信息 : {"code":0,"msg":"成功","data":{"advisor_id":"C9F4BDEC8DCE2F9BE0536614A8C05147","advisor_name":"许兵","advisor_phone":"0755-21518783","advisor_profile_url":"/mall_upload/20210908/7f3a7c9fa79c40ada3eb372f92634683.png","advisor_card_url":"/mall_upload/20220701/3a01fa31a8bc4632bd509e6e274f42d3.png","website_no":"d3f63c29bef84130bf7e16f20243323c","special_img_url":"/mall_upload/20211126/22303bde4d0948a9a7f9c32c502d2531.png","jump_url":null}}
